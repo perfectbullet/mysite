@@ -121,3 +121,9 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+if __name__ == '__main__':
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    print('__file__ = {}'.format(__file__))
+    print(BASE_DIR)
